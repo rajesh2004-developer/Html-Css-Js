@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', serif;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 20px;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+nav .searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 400px;
+}
+
+nav .searchBar .search-area {
+  width: 80%;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+nav .searchBar #search-icon {
+  width: 20%;
+  height: 40px;
+  border: 0;
+  background-color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.container {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.container .left {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .left #meal-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container .right {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container .right a {
+  display: flex;
+  justify-content: center;
+}
+
+.container .right .description {
+  overflow-x: auto;
+  height: auto;
+  scrollbar-width: none;
+}
+
+.incredients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  gap: 15px;
+  max-width: 800px;
+}
+
+.incredients .item {
+  padding: 15px 10px;
+  border: 2px solid black;
+  border-radius: 30px;
+  min-width: 100px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  nav .searchBar {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container .left,
+  .container .right {
+    width: 90%;
+  }
+
+  .incredients {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    gap: 10px;
+    max-width: 90%;
+  }
+
+  .incredients .item {
+    width: 80%;
+    text-align: center;
+  }
+}
